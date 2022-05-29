@@ -1,0 +1,20 @@
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+th {
+    background-color: #04293A;
+    color: #ECB365;
+}
+
+td {
+    background-color: #064663;
+    color: #ECB365;
+}
+
+.pointer {
+    cursor: pointer;
+    color: #ECB365;
+}

@@ -1,0 +1,50 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 mat-table">
+
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>
+            ID
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef>
+            Title
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="author">
+        <th mat-header-cell *matHeaderCellDef>
+            Author
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.author}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef>
+            Category
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="premiere">
+        <th mat-header-cell *matHeaderCellDef>
+            Premiere
+        </th>
+        <td mat-cell *matCellDef="let element"> {{element.premiere}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>
+            Actions
+        </th>
+        <td mat-cell *matCellDef="let element" class="actions">
+            <mat-icon aria-hidden="true" class="pointer edit" (click)="openDialog(element.id, element.title, element.author, element.category, element.premiere)" aria-label="Example home icon">edit</mat-icon>
+            <mat-icon aria-hidden="true" class="pointer del" (click)="del(element.id)" aria-label="Example home icon">delete</mat-icon>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,0 +1,10 @@
+.pointer {
+    cursor: pointer;
+    background-color: #ECB365;
+    color: #04293A;
+    border-radius: 50px;
+    padding: 1%;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+}

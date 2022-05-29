@@ -1,0 +1,28 @@
+.example-form-field {
+    width: 100%;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+.pointer {
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    width: 10%;
+    height: 5%;
+}
+
+.red {
+    background-color: rgb(233, 61, 61);
+    float: left;
+}
+
+.green {
+    background-color: #AAFF00;
+    float: right;
+}
